@@ -69,16 +69,11 @@ class AddOrderViewController: UIViewController {
             delegate.addCoffeeOrderViewControllerDidSave(order: order, controller: self)
           }
         }
-        
-        
       case .failure(let error):
         print(error)
       }
     }
-    
   }
-  
-  
 }
 
 extension AddOrderViewController: UITableViewDelegate, UITableViewDataSource {

@@ -36,7 +36,6 @@ class OrdersTableViewController: UITableViewController {
           let addCoffeeOrderVC = navC.viewControllers.first as? AddOrderViewController else {
       fatalError("Error performing segue!")
     }
-    
     addCoffeeOrderVC.delegate = self
   }
   
@@ -57,7 +56,6 @@ class OrdersTableViewController: UITableViewController {
     cell.textLabel?.text = vm.type
     cell.detailTextLabel?.text = vm.size
     return cell
-    
   }
   
 }
